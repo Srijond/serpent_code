@@ -1,0 +1,97 @@
+providers:
+  anthropic:
+    name: Anthropic
+    base_url: https://api.anthropic.com
+    models:
+      claude-opus-4-20250514:
+        name: Claude Opus 4
+        context_window: 200000
+        max_output_tokens: 8192
+        supports_thinking: true
+        supports_tool_use: true
+      claude-sonnet-4-20250514:
+        name: Claude Sonnet 4
+        context_window: 200000
+        max_output_tokens: 8192
+        supports_thinking: true
+        supports_tool_use: true
+      claude-haiku-4-20250514:
+        name: Claude Haiku 4
+        context_window: 200000
+        max_output_tokens: 8192
+        supports_thinking: false
+        supports_tool_use: true
+
+  openai:
+    name: OpenAI
+    base_url: https://api.openai.com/v1
+    models:
+      gpt-4.1:
+        name: GPT-4.1
+        context_window: 1047576
+        max_output_tokens: 32768
+        supports_thinking: false
+        supports_tool_use: true
+      gpt-4.1-mini:
+        name: GPT-4.1 Mini
+        context_window: 1047576
+        max_output_tokens: 32768
+        supports_thinking: false
+        supports_tool_use: true
+      o3:
+        name: o3
+        context_window: 200000
+        max_output_tokens: 100000
+        supports_thinking: true
+        supports_tool_use: true
+      o4-mini:
+        name: o4-mini
+        context_window: 200000
+        max_output_tokens: 100000
+        supports_thinking: true
+        supports_tool_use: true
+
+  google:
+    name: Google AI
+    base_url: https://generativelanguage.googleapis.com
+    models:
+      gemini-2.5-pro-preview-05-06:
+        name: Gemini 2.5 Pro
+        context_window: 1048576
+        max_output_tokens: 65536
+        supports_thinking: true
+        supports_tool_use: true
+      gemini-2.5-flash-preview-05-20:
+        name: Gemini 2.5 Flash
+        context_window: 1048576
+        max_output_tokens: 65536
+        supports_thinking: true
+        supports_tool_use: true
+
+  deepseek:
+    name: DeepSeek
+    base_url: https://api.deepseek.com
+    models:
+      deepseek-chat:
+        name: DeepSeek V3
+        context_window: 64000
+        max_output_tokens: 8192
+        supports_thinking: false
+        supports_tool_use: true
+      deepseek-reasoner:
+        name: DeepSeek R1
+        context_window: 64000
+        max_output_tokens: 8192
+        supports_thinking: true
+        supports_tool_use: true
+
+  moonshot:
+    name: Moonshot AI
+    base_url: https://api.moonshot.cn/v1
+    models:
+      kimi-k2-0714-preview:
+        name: Kimi K2
+        context_window: 256000
+        max_output_tokens: 32000
+        supports_thinking: true
+        supports_tool_use: true
